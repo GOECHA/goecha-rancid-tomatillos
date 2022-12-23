@@ -2,7 +2,7 @@
 
 ## Deployed Page
 
-You can view our deployed webpage here: [Rancid Tomatillos]gi (https://rancid-tomatillos-seven.vercel.app/)
+You can view our deployed webpage here: [Rancid Tomatillos](https://rancid-tomatillos-seven.vercel.app/)
 
 ## Table of Contents
   - [Overview](#overview)
