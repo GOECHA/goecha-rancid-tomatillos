@@ -151,3 +151,12 @@
 ::-webkit-scrollbar-corner {
     background: rgb(0, 0, 0, .7);
 }
+
+@media screen and ( max-width:640px){
+
+
+}
+
+@media screen and ( max-width:1333px){
+    
+}
