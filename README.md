@@ -1,5 +1,9 @@
 # Rancid Tomatillos!!!
 
+## Deployed Page
+
+You can view our deployed webpage here: [Rancid Tomatillos]gi (https://rancid-tomatillos-seven.vercel.app/)
+
 ## Table of Contents
   - [Overview](#overview)
   - [Technologies](#technologies)
@@ -51,9 +55,6 @@ https://user-images.githubusercontent.com/101746747/188335223-6f4de0da-c321-4a95
 
 - React-Modal addition
 
-## Deployed Page
-
-You can view our deployed webpage here: [TBD DEPLOYED LINK]
 
 ## Project Spec
 
