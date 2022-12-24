@@ -54,12 +54,20 @@
   background-image: linear-gradient(to right, black, rgb(0, 0, 0, .9), rgb(0, 0, 0, .1), rgb(0, 0, 0, 0), rgb(0, 0, 0, .1), rgb(0, 0, 0, .9), black);
   height: 100%;
   width: 100%;
+  position: absolute;
+
 }
 
 .random-backdrop {
-  height: 100%;
-  width: 80%;
+  content: "";
+  display: inline-block;
   position: absolute;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .my-swiper,
@@ -105,11 +113,69 @@
   object-fit: cover;
 }
 
-@media screen and ( max-width:640px){
 
-
-}
 
 @media screen and ( max-width:1333px){
+
+  .new-header {
+    font-size: 60px; 
+  
+  }
+  .random-movie-title {
+    font-size: 32px; 
+  } 
+  .random-backdrop {
+    height: 80vh;
+    width: 80vw;
+    overflow: hidden;
+  }
+
+
+.top-swiper-container,
+.bottom-swiper-container {
+  height: 32%;
+  width: 98%;
+}
+
+.top-swiper-container {
+  position: absolute;
+  bottom: -5%;
+}
+
+.bottom-swiper-container {
+  position: absolute;
+  bottom: -38%;
+}
     
+}
+
+@media screen and ( max-width:896px){
+  .new-header {
+    font-size: 35px; 
+  }
+  
+  .random-movie-title {
+    font-size: 24px; 
+    width: 36%;
+  }
+  .random-backdrop {
+    height: 80vh;
+    width: 80vw;
+    overflow: hidden;
+  }
+  .top-swiper-container,
+  .bottom-swiper-container {
+    height: 32%;
+    width: 98%;
+  }
+  
+  .top-swiper-container {
+    position: absolute;
+    bottom: -5%;
+  }
+  
+  .bottom-swiper-container {
+    position: absolute;
+    bottom: -38%;
+  }
 }
