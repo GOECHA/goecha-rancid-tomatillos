@@ -6,22 +6,79 @@
   left: 3%; 
   z-index: 3;
   opacity: 1;
+  cursor: crosshair;
+  filter: drop-shadow(4px 4px 2px rgb(209,215,59));
+}
+
+.head-logo{
+  display: none;
+
+}
+
+
+.new-header:hover {
+  display:none;
+  
+}
+
+.new-header:hover + .head-logo {
+  position: absolute;
+  display: block;
+  height: 20vh;
+  width: auto;
+  z-index: 3;
+  top: 5%;
+  left: 20%;
+  filter: drop-shadow(4px 4px 2px rgb(209,215,59));
+  cursor: crosshair;
+  text-emphasis-style: double-circle;
+  -webkit-animation: slide 0.5s forwards;
+   -webkit-animation-delay: 2s;
+   animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+.head-logo:hover{
+  text-emphasis-style: double-circle;
+
+}
+
+
+
+@-webkit-keyframes head-logo {
+100% { left: 0; }
+}
+
+@keyframes head-logo {
+100% { left: 0; }
 }
 
 
 .random-movie-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
   position: absolute;
   color: white;
-  height: 10%;
-  width: 30%;
+  height: 20%;
+  width: 50%;
   text-align: center;
   font-size: 2em;
   right: 5%;
-  top: 50%;
+  top: 60%;
+  bottom: 0;
   transform: translateY(-50%);
   text-decoration: none;
   z-index: 3;
+  transition: all .4s ease-in-out; 
 }
+
+.random-movie-title:hover{
+    filter: drop-shadow(2px 2px 1px rgb(209,215,59));
+}
+
+
+
  .movie-container{
   display: flex;
   flex-wrap: wrap;
@@ -33,7 +90,7 @@
   height: 100%;
   width: 100%;
 } 
-/*
+
 
 
 .top-swiper-container,
@@ -51,34 +108,14 @@
   position: absolute;
   bottom: -38%;
 }
-*/
-.top-swiper-container,
-.bottom-swiper-container {
-  /* height: 100vh; */
-  width: 95%;
-  /* margin: 0 auto; */
-}
 
-.top-swiper-container {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
 
-.bottom-swiper-container {
-  /* position: absolute; */
-  position: relative;
-
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
 
 .movie-container-backdrop {
   display: flex;
   justify-content: center;
   background-image: linear-gradient(to right, black, rgb(0, 0, 0, .9), rgb(0, 0, 0, .1), rgb(0, 0, 0, 0), rgb(0, 0, 0, .1), rgb(0, 0, 0, .9), black);
+
   height: 100vh;
   width: 100vw;
   position: relative;
