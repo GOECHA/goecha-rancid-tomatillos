@@ -1,5 +1,6 @@
 * {
   z-index: 2;
+  /* border: 1pt solid rgb(141, 50, 215); */
 }
 
 .movie-info {
@@ -7,6 +8,7 @@
   flex-direction: column;
   background-color: black;
   height: 100%;
+  overflow: hidden;
 }
 
 .link-to-home {
@@ -82,32 +84,47 @@ label {
 .close-container:hover label {
   opacity: 1;
 }
+.single-movie-details-wrapper{
+position: absolute;
+}
+
 
 .movie-details-container {
   display: flex;
-  height: 50%;
+  position: cover;
+  justify-content: space-around;
+  position: cover;
+  height: 100%;
   width: 100%;
-  margin-top: -4.5%;
+  margin-top: -1.5%;
   color: white;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   background-color: rgb(0, 0, 0, 0.7);
 }
 
+.single-movie-mini-poster-wrapper{
+    height: 30vh;
+    width: 30vw;
+}
+
 .single-movie-mini-poster {
-  margin: 3% 0% 0% 7%;
-  height: 80%;
-  width: 12%;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+  margin: 5%;
+  height: auto;
+  width: auto;
 }
 
 .movie-details-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 2%;
-  width: 60%;
+  /* align-items: center; */
+  margin-right: 2%;
+  width: 30%;
 }
 
 .single-movie-back-drop {
+  display: flex;
+  justify-content: space-around;
   position: absolute;
   z-index: 1;
   height: 100%;
@@ -115,20 +132,43 @@ label {
 }
 
 .single-movie-title {
+  display: flex;
+  /* align-items: flex-end; */
+  position: absolute;
+  filter: drop-shadow(4px 4px 2px rgb(7, 7, 7));
+  height: 60px;
   font-size: 2em;
   margin-bottom: 1%;
-  margin-left: 0%;
+  margin-left: 3rem;
+  z-index: 3;
 }
 
-.single-movie-overview {
-  text-align: center;
-  font-size: 1.1em;
-  margin: 0% 2% 1% 2%;
+.genres,
+.runtime,
+.budget,
+.revenue,
+.single-movie-rating {
+  font-size: 0.8rem;
+}
+
+.overview-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 60vw;
+  padding-top: 2rem;
+  padding-left: 2rem;
 }
 
 .tagline {
   font-size: 1.3em;
   margin-bottom: 1%;
+}
+
+.single-movie-overview {
+  text-align: center;
+  font-size: 3vh;
+  margin: 0% 2% 1% 2%;
 }
 
 .loading {
@@ -151,9 +191,12 @@ label {
 
 .video-container {
   display: flex;
+  height: 50%;
+
   align-items: center;
-  justify-content: center;
+  /* justify-content: flex-end; */
   margin-top: 7%;
+  /* padding-left: 20rem; */
 }
 
 .feature-wrapper {
@@ -174,13 +217,15 @@ label {
 }
 
 .my-swiper-movies {
-  width: 40%;
-  height: 270%;
+  width: 60vw;
+  height: 60vh;
   margin-bottom: 1%;
+  /* padding-bottom: 2rem; */
 }
 
 .swiper-slide {
   display: flex;
+  height: 100vh;
   justify-content: center;
 }
 
