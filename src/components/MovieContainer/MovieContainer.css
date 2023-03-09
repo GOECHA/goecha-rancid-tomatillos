@@ -70,11 +70,14 @@
   transform: translateY(-50%);
   text-decoration: none;
   z-index: 3;
+  transition: all .4s ease-in-out; 
 }
 
 .random-movie-title:hover{
-   text-emphasis-style: triangle;
+    filter: drop-shadow(2px 2px 1px rgb(209,215,59));
 }
+
+
 
  .movie-container{
   display: flex;
