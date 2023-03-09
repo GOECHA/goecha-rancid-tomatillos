@@ -62,9 +62,25 @@ const MovieContainer = ( {movies} ) => {
         navigation={true}
         modules={[Parallax, Navigation, Mousewheel, Keyboard]}
         className="my-swiper"
-        slidesPerView={10}
-        slidesPerGroup={5}
-        spaceBetween={5}
+        // slidesPerView={7}
+        // slidesPerGroup={7}
+        // spaceBetween={5}
+        breakpoints={{
+          320: 
+          {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 7,
+          spaceBetween: 40
+        }}}
         cssMode={true}
         mousewheel={true}
         keyboard={true}
@@ -85,9 +101,25 @@ const MovieContainer = ( {movies} ) => {
         navigation={true}
         modules={[Parallax, Navigation, Mousewheel, Keyboard]}
         className="my-swiper2"
-        slidesPerView={10}
-        slidesPerGroup={5}
-        spaceBetween={5}
+        // slidesPerView={10}
+        // slidesPerGroup={5}
+        // spaceBetween={5}
+        breakpoints={{
+          320: 
+          {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 7,
+          spaceBetween: 40
+        }}}
         cssMode={true}
         mousewheel={true}
         keyboard={true}
