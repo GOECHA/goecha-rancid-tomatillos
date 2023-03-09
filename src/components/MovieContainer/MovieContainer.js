@@ -48,6 +48,7 @@ const MovieContainer = ( {movies} ) => {
   return (
     <div className="movie-container">
       <h1 className='new-header'>Rancid Tomatillos</h1>
+      <img className='head-logo' id='head-logo' src={logo} alt='heading logo'/>
       {randomMovie !== undefined && <NavLink className='random-movie-title' to={`/singlemovie/${randomMovie.id}`} key={randomMovie.id}>{randomMovie.title}</NavLink>}
       {randomMovie !== undefined && <img className='random-backdrop' src={randomMovie.backdrop_path} alt='featured backdrop'/>}
       <div className="movie-container-backdrop"></div>
