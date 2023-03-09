@@ -62,7 +62,6 @@ class SingleMovie extends Component {
         <section className="movie-info">
           <NavLink to="/" className="link-to-home">
             {
-              /* <button className='back-to-home-btn' onClick={this.resetIndex}>X</button>*/
               <div class="close-container">
                 <div class="leftright"></div>
                 <div class="rightleft"></div>
