@@ -5,7 +5,7 @@
 .movie-card {
   display: flex;
   flex-direction: column;
-  height: 50%;
+  height: 150px;
   width: 100%;
   border: 1px solid #000000;
   overflow: hidden;
@@ -19,6 +19,8 @@
   height: 90%;
   width: 100%;
   transition: all .2s ease-in-out;
+  position: relative;
+  z-index: -1;
 }
 
 .mini-poster:hover {
@@ -27,15 +29,25 @@
 
 .title-logo-rating {
   display: flex;
-  height: 13%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 30px;
   width: 100%;
-  background-color: #3d3c3c;
-  margin-top: -7px;
+  background: linear-gradient( rgb(0, 0, 0, .1), rgb(0, 0, 0, .8),rgb(0, 0, 0, .9));
+  margin-top: -20px;
+  z-index: 0;
 }
 
 .movie-title {
-  width: 70%;
-  font-size: .7vh;
+  display: none;
+  width: 75%;
+  font-size: .8vh;
+  z-index: 1;
+}
+
+.movie-title:hover {
+  width: 75%;
+  font-size: .8vh;
 }
 
 .movie-title,
@@ -57,6 +69,6 @@ color: white;
 }
 
 .rating {
-  font-size: 9pt;
+  font-size: .7rem;
   height: 100%;
 }
