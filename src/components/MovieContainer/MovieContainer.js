@@ -74,12 +74,12 @@ const MovieContainer = ( {movies} ) => {
         // when window width is >= 480px
         480: {
           slidesPerView: 3,
-          spaceBetween: 30
+          spaceBetween: 20
         },
         // when window width is >= 640px
         640: {
           slidesPerView: 7,
-          spaceBetween: 40
+          spaceBetween: 20
         }}}
         cssMode={true}
         mousewheel={true}
